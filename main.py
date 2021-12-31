@@ -36,7 +36,7 @@ async def on_message(message):
     await message.add_reaction('\U0001F602') 
 
   if message.content == '+help':
-    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n+help = See command\n+rng = Random number from 1 to 100\n+luck = Tell how lucky you are(3%)')
+    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+digits = \U0001F440')
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+tenshichanisthebest':
@@ -47,11 +47,17 @@ async def on_message(message):
     await message.channel.send(int(random.uniform(1,100)))
    
   if message.content == '+luck':
-    luck = random.uniform(1,100)
+    luck = random.uniform(1,1000)
     luck = int(luck)
     if luck <= 3:
       await message.channel.send('You are lucky today')
     else:
       await message.channel.send('You are unlucky!')
+  
+  if message.content == '+digits':
+    digits = random.uniform(100000,385000)
+    digits = int(digits)
+    await message.contents.send(digits)
+    await message.add_reaction('\U0001F440')
 
 client.run(os.getenv('TOKEN'))

@@ -36,7 +36,7 @@ async def on_message(message):
     await message.add_reaction('\U0001F602') 
 
   if message.content == '+help':
-    await message.channel.send('Hi Im NotRealSean bot\nHere is some command you can use for now\n+rng = Random number from 1 to 100\n+luck = Tell how lucky you are(3%)')
+    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n+help = See command\n+rng = Random number from 1 to 100\n+luck = Tell how lucky you are(3%)')
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+tenshichanisthebest':

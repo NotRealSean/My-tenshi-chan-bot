@@ -145,9 +145,6 @@ async def on_message(message):
     await message.channel.send(int(random.uniform(100000,999999)))
     await message.add_reaction('\U0001F44D')
 
-  if message.content == '+hny':
-    await message.channel.send('HAPPY NEW YEAR EVERYONE!')
-
   if message.content == '+pray':
     await message.channel.send('\U0001F614\n\U0001F64F')
     await message.add_reaction('\U0001F64F')

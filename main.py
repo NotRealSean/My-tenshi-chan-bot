@@ -49,7 +49,7 @@ async def on_message(message):
     await message.add_reaction('\U0001F499')
 
   if message.content == '+help':
-    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+lottery = \U0001F44D\n+pray = Pray why not (～￣▽￣)～ \n-------------------------------------------------------\nMy source code : https://github.com/NotRealSean/My-tenshi-chan-bot')
+    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+lottery = \U0001F44D\n+pray = Pray why not (～￣▽￣)～ \n+loli = Try it\n-------------------------------------------------------\nMy source code : https://github.com/NotRealSean/My-tenshi-chan-bot')
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+tenshichanisthebest':
@@ -151,6 +151,31 @@ async def on_message(message):
   if message.content == '+pray':
     await message.channel.send('\U0001F614\n\U0001F64F')
     await message.add_reaction('\U0001F64F')
+  
+  if message.content == '+loli':
+    loli = random.uniform(1,10)
+    loli = int(loli)
+    if loli == 1:
+      await message.channel.send('p-please be gentle...\U0001F499')
+    if loli == 2:
+      await message.channel.send('\U0001F628')
+    if loli == 3:
+      await message.channel.send('FBI-SAN LOLICON IS HERE!')
+    if loli == 4:
+      await message.channel.send('+loli command not found please try again.')
+    if loli == 5:
+      await message.channel.send('404 Tenshi chan found an error please stay turned.')
+    if loli == 6:
+      await message.channel.send('So... nii-san is lolicon i see')
+    if loli == 7:
+      await message.channel.send('Nii-san... pervert!')
+    if loli == 8:
+      await message.channel.send('P-please dont eat me nii-san')
+    if loli == 9:
+      await message.channel.send('NII-SAN!?!')
+    if loli == 10:
+      await message.channel.send('Nii-san... can you wait me grown up a little bit please\U0001F499')
+    
 
 
 client.run(os.getenv('TOKEN'))

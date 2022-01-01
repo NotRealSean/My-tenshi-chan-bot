@@ -2,6 +2,7 @@ import discord
 import os
 import random
 
+
 client = discord.Client()
 
 @client.event
@@ -36,7 +37,7 @@ async def on_message(message):
     await message.add_reaction('\U0001F602') 
 
   if message.content == '+help':
-    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+digits = \U0001F440')
+    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+digits = \U0001F440\n+lottery = \U0001F44D \n-------------------------------------------------------')
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+tenshichanisthebest':
@@ -44,20 +45,32 @@ async def on_message(message):
     await message.add_reaction('\U0001F499')
   
   if message.content == '+rng':
-    await message.channel.send(int(random.uniform(1,100)))
+    await message.channel.send(int(random.uniform(1,1000)))
    
   if message.content == '+luck':
-    luck = random.uniform(1,1000)
+    luck = random.uniform(1,100)
     luck = int(luck)
     if luck <= 3:
-      await message.channel.send('You are lucky today')
+      await message.channel.send('You are very lucky congratulations!')
     else:
-      await message.channel.send('You are unlucky!')
+      await message.channel.send('You are unlucky better luck next time ')
   
   if message.content == '+digits':
-    digits = random.uniform(100000,385000)
-    digits = int(digits)
-    await message.contents.send(digits)
+    await message.channel.send(int(random.uniform(100000,385000)))
     await message.add_reaction('\U0001F440')
+
+  if message.content == '+lottery':
+    await message.channel.send(int(random.uniform(100000,999999)))
+    await message.add_reaction('\U0001F44D')
+
+  if message.content == '+hny':
+    await message.channel.send('HAPPY NEW YEAR EVERYONE!')
+
+  if message.content == 'poi':
+    await message.channel.send('ぽい！')
+  
+  if message.content == 'POI':
+    await message.channel.send('ぽい！')
+
 
 client.run(os.getenv('TOKEN'))

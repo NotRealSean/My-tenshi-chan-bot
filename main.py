@@ -74,6 +74,7 @@ async def on_message(message):
 
   if message.content == '+pray':
     await message.channel.send('\U0001F614\n\U0001F64F')
+    await message.add_reaction('\U0001F64F')
 
 
 client.run(os.getenv('TOKEN'))

@@ -1,5 +1,4 @@
 import discord
-import youtube_dl
 import os
 import random
 import time
@@ -44,6 +43,10 @@ async def on_message(message):
   
   if message.content == 'POI':
     await message.channel.send('ぽい！')
+
+  if message.content == 'tenshi chan is the best':
+    await message.channel.send('Thank you onii-chan\U0001F499')
+    await message.add_reaction('\U0001F499')
 
   if message.content == '+help':
     await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+lottery = \U0001F44D\n+pray = Pray why not (～￣▽￣)～ \n-------------------------------------------------------')

@@ -43,7 +43,7 @@ async def on_message(message):
     await message.channel.send('ぽい！')
 
   if message.content == '+help':
-    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+digits = \U0001F440\n+lottery = \U0001F44D \n-------------------------------------------------------')
+    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+digits = \U0001F440\n+lottery = \U0001F44D\n+pray = Pray why not (～￣▽￣)～ \n-------------------------------------------------------')
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+tenshichanisthebest':

@@ -36,6 +36,12 @@ async def on_message(message):
   if message.content == 'LMAO':
     await message.add_reaction('\U0001F602') 
 
+  if message.content == 'poi':
+    await message.channel.send('ぽい！')
+  
+  if message.content == 'POI':
+    await message.channel.send('ぽい！')
+
   if message.content == '+help':
     await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+digits = \U0001F440\n+lottery = \U0001F44D \n-------------------------------------------------------')
     await message.add_reaction('\U0001F44C')
@@ -51,9 +57,9 @@ async def on_message(message):
     luck = random.uniform(1,100)
     luck = int(luck)
     if luck <= 3:
-      await message.channel.send('You are very lucky congratulations!')
+      await message.channel.send('You are very lucky congratulations!\U0001F499')
     else:
-      await message.channel.send('You are unlucky better luck next time ')
+      await message.channel.send('You are unlucky better luck next time \U0001F494 ')
   
   if message.content == '+digits':
     await message.channel.send(int(random.uniform(100000,385000)))
@@ -66,11 +72,8 @@ async def on_message(message):
   if message.content == '+hny':
     await message.channel.send('HAPPY NEW YEAR EVERYONE!')
 
-  if message.content == 'poi':
-    await message.channel.send('ぽい！')
-  
-  if message.content == 'POI':
-    await message.channel.send('ぽい！')
+  if message.content == '':
+    await message.channel.send('')
 
 
 client.run(os.getenv('TOKEN'))

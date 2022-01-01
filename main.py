@@ -1,4 +1,5 @@
 import discord
+import youtube_dl
 import os
 import random
 import time
@@ -8,7 +9,6 @@ client = discord.Client()
 @client.event
 async def on_ready():
   print('{0.user} is now online!'.format(client))
-
 
 @client.event
 async def on_message(message):

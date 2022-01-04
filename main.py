@@ -62,7 +62,7 @@ async def on_message(message):
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+help':
-    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+lottery = \U0001F44D\n+pray = Pray why not (～￣▽￣)～ \n+loli = Try it I dare you\n+ownerfact = Facts about owner\n+calendar = What date is today?\n+event = Tell you about today event\n-------------------------------------------------------\nMy source code : https://github.com/NotRealSean/My-tenshi-chan-bot')
+    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+lottery = \U0001F44D\n+pray = Pray why not (～￣▽￣)～ \n+loli = Try it I dare you\n+ownerfact = Facts about owner\n+calendar = What date is today?(UTC)\n+event = Tell you about today event\n-------------------------------------------------------\nMy source code : https://github.com/NotRealSean/My-tenshi-chan-bot')
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+tenshichanisthebest':

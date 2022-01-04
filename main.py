@@ -235,7 +235,7 @@ async def on_message(message):
     Today = datetime.datetime.now()
     await message.channel.send(Today)
     await message.channel.send('Today has no special event\U0001F613')
-    
+
 
 
 client.run(os.getenv('TOKEN'))

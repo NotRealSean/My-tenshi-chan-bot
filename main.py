@@ -221,7 +221,7 @@ async def on_message(message):
   if message.content == '+event':
     Today = datetime.datetime.now()
     await message.channel.send(Today)
-    await message.channel.send('Today has no special event\U0001F61E')
+    await message.channel.send('Today has no special event\U0001F613')
     
 
 

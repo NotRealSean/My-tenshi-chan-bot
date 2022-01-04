@@ -16,11 +16,12 @@ async def on_ready():
     print('{0.user} is now online'.format(client))
   else:
     print('{0.user} is ready to see you <3'.format(client))
-  print('current version : 1.10.52')  
+  print('current version : 1.10.53')  
   
 
 @client.event
 async def on_message(message):
+
   if message.author == client.user:
     return
     
@@ -182,7 +183,7 @@ async def on_message(message):
     loli = random.uniform(1,10)
     loli = int(loli)
     if loli == 1:
-      await message.channel.send('p-please be gentle...\U0001F499')
+      await message.channel.send('mochi mochi fbi-san...')
     if loli == 2:
       await message.channel.send('\U0001F628')
     if loli == 3:
@@ -220,7 +221,7 @@ async def on_message(message):
     if fact == 7:
       await message.channel.send('He like to play ryhthm game')
     if fact == 8:
-      await message.channel.send('He dont like drug')
+      await message.channel.send('<3')
     if fact == 9 :
       await message.channel.send('He like gacha game(thats not gacha cringe)')
     if fact == 10:

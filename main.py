@@ -13,8 +13,8 @@ async def on_ready():
   if RandomOnlineText == 1:
     print('{0.user} is now wake up'.format(client))
   else:
-    print('{0.user} is ready to see you <3')
-  print('current version : 1.10.4')  
+    print('{0.user} is ready to see you <3'.format(client))
+  print('current version : 1.10.5')  
   
 
 @client.event

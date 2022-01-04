@@ -49,6 +49,10 @@ async def on_message(message):
     await message.channel.send('Thank you onii-chan\U0001F499')
     await message.add_reaction('\U0001F499')
 
+  if message.content == 'Tenshi chan is the best':
+    await message.channel.send('Thank you onii-chan\U0001F499')
+    await message.add_reaction('\U0001F499')
+
   if message.content == 'ok':
     await message.channel.send('ok')
     await message.add_reaction('\U0001F44C')

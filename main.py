@@ -10,13 +10,13 @@ client = discord.Client()
 async def on_ready():
   RandomOnlineText = random.uniform(1,10)
   RandomOnlineText = int(RandomOnlineText)
-  if RandomOnlineText == 1:
+  if RandomOnlineText <= 5:
     print('{0.user} is now wake up'.format(client))
-  elif RandomOnlineText == 2:
+  elif RandomOnlineText == 6:
     print('{0.user} is now online'.format(client))
   else:
     print('{0.user} is ready to see you <3'.format(client))
-  print('current version : 1.10.51')  
+  print('current version : 1.10.52')  
   
 
 @client.event

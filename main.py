@@ -9,7 +9,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
   print('{0.user} is ready to see you <3'.format(client))
-  print('current version : 1.10.41')  
+  print('current version : 1.10.5')  
   
 
 @client.event
@@ -66,7 +66,7 @@ async def on_message(message):
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+help':
-    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+lottery = \U0001F44D\n+pray = Pray why not (～￣▽￣)～ \n+loli = Try it I dare you\n+ownerfact = Facts about owner\n+event = Tell you about today event\n-------------------------------------------------------\nMy source code : https://github.com/NotRealSean/My-tenshi-chan-bot')
+    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+pray = Pray why not (～￣▽￣)～ \n+loli = Try it I dare you\n+ownerfact = Facts about owner\n+event = Tell you about today event\n-------------------------------------------------------\nMy source code : https://github.com/NotRealSean/My-tenshi-chan-bot')
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+tenshichanisthebest':
@@ -160,10 +160,6 @@ async def on_message(message):
     digits = int(digits)
     await message.channel.send(digits)
     await message.add_reaction('\U0001F440')
-
-  if message.content == '+lottery':
-    await message.channel.send(int(random.uniform(100000,999999)))
-    await message.add_reaction('\U0001F44D')
 
   if message.content == '+pray':
     await message.channel.send('\U0001F614\n\U0001F64F')

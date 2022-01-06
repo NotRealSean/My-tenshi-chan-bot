@@ -9,7 +9,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
   print('{0.user} is ready to see you <3'.format(client))
-  print('current version : 1.10.52')  
+  print('current version : 1.10.6')  
   
 
 @client.event
@@ -66,7 +66,7 @@ async def on_message(message):
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+help':
-    await message.channel.send('Hi Im Tenshi\nNice to meet you\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+pray = Pray why not (～￣▽￣)～ \n+loli = Try it I dare you\n+ownerfact = Facts about owner\n+event = Tell you about today event\n-------------------------------------------------------\nCurrent version - 1.10.52')
+    await message.channel.send('Hi Im Tenshi\nNice to meet you\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+pray = Pray why not (～￣▽￣)～ \n+loli = Try it I dare you\n+event = Tell you about today event\n-------------------------------------------------------\nCurrent version - 1.10.52')
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+tenshichanisthebest':
@@ -188,30 +188,6 @@ async def on_message(message):
       await message.channel.send('NII-SAN!?!')
     if loli == 10:
       await message.channel.send('Nii-san... can you wait me grown up a little bit please\U0001F499')
-
-  if message.content == '+ownerfact':
-    fact = random.uniform(1,10)
-    fact = int(fact)
-    if fact == 1:
-      await message.channel.send('My owner is new to coding')
-    if fact == 2:
-      await message.channel.send('His favorite character is Hinanawi Tenshi')
-    if fact == 3:
-      await message.channel.send('He is lazy sometimes but when he want to do something he will over do it')
-    if fact == 4:
-      await message.channel.send('My owner like to learn japanese')
-    if fact == 5:
-      await message.channel.send('He like to eaat omelette')
-    if fact == 6:
-      await message.channel.send('He dont like to talk to people that he dont know')
-    if fact == 7:
-      await message.channel.send('He like to play ryhthm game')
-    if fact == 8:
-      await message.channel.send('<3')
-    if fact == 9 :
-      await message.channel.send('He like gacha game(thats not gacha cringe)')
-    if fact == 10:
-      await message.channel.send('He is single')
   
   if message.content == '+event':
     Today = datetime.datetime.now()

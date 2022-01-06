@@ -16,7 +16,7 @@ async def on_ready():
     print('{0.user} is now online'.format(client))
   else:
     print('{0.user} is ready to see you <3'.format(client))
-  print('current version : 1.10.53')  
+  print('current version : 1.10.4')  
   
 
 @client.event
@@ -64,19 +64,16 @@ async def on_message(message):
     await message.add_reaction('\U0001F499')
 
   if message.content == 'ok':
-    await message.channel.send('ok')
     await message.add_reaction('\U0001F44C')
 
   if message.content == 'Ok':
-    await message.channel.send('ok')
     await message.add_reaction('\U0001F44C')
 
   if message.content == 'OK':
-    await message.channel.send('ok')
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+help':
-    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+lottery = \U0001F44D\n+pray = Pray why not (～￣▽￣)～ \n+loli = Try it I dare you\n+ownerfact = Facts about owner\n+calendar = What date is today?(UTC)\n+event = Tell you about today event\n-------------------------------------------------------\nMy source code : https://github.com/NotRealSean/My-tenshi-chan-bot')
+    await message.channel.send('Hi Im NotRealSean bot\nHere are some command you can use for now\n-------------------------------------------------------\n+help = See command\n+rng = Random number from 1 to 1000\n+luck = Tell how lucky you are(3%)\n+luck10 = Do 10 rolls of +luck\n+digits = \U0001F440\n+lottery = \U0001F44D\n+pray = Pray why not (～￣▽￣)～ \n+loli = Try it I dare you\n+ownerfact = Facts about owner\n+event = Tell you about today event\n-------------------------------------------------------\nMy source code : https://github.com/NotRealSean/My-tenshi-chan-bot')
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+tenshichanisthebest':
@@ -226,11 +223,6 @@ async def on_message(message):
       await message.channel.send('He like gacha game(thats not gacha cringe)')
     if fact == 10:
       await message.channel.send('He is single')
-
-  if message.content == '+calendar':
-    Today = datetime.datetime.now()
-    await message.channel.send(Today.strftime("%A"))
-    await message.channel.send(Today)
   
   if message.content == '+event':
     Today = datetime.datetime.now()

@@ -169,13 +169,13 @@ async def on_message(message):
     loli = random.uniform(1,10)
     loli = int(loli)
     if loli == 1:
-      await message.channel.send('mochi mochi fbi-san...')
+      await message.reply('mochi mochi fbi-san...')
     if loli == 2:
       await message.channel.send('\U0001F628')
     if loli == 3:
       await message.channel.send('FBI-SAN LOLICON IS HERE!')
     if loli == 4:
-      await message.channel.send('+loli command not found please try again.')
+      await message.reply('+loli command not found please try again.')
     if loli == 5:
       await message.channel.send('404 Tenshi chan found an error please stay turned.')
     if loli == 6:

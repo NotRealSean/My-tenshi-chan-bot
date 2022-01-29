@@ -49,11 +49,11 @@ async def on_message(message):
     await message.channel.send('ぽい！')
 
   if message.content == 'tenshi chan is the best':
-    await message.channel.send('Thank you onii-chan\U0001F499')
+    await message.reply('Thank you onii-chan\U0001F499')
     await message.add_reaction('\U0001F499')
 
   if message.content == 'Tenshi chan is the best':
-    await message.channel.send('Thank you onii-chan\U0001F499')
+    await message.reply('Thank you onii-chan\U0001F499')
     await message.add_reaction('\U0001F499')
 
   if message.content == 'ok':
@@ -70,7 +70,7 @@ async def on_message(message):
     await message.add_reaction('\U0001F44C')
 
   if message.content == '+tenshichanisthebest':
-    await message.channel.send('Thank you onii-chan\U0001F499')
+    await message.reply('Thank you onii-chan\U0001F499')
     await message.add_reaction('\U0001F499')
   
   if message.content == '+rng':
@@ -194,6 +194,14 @@ async def on_message(message):
     await message.channel.send(Today)
     await message.channel.send('Today has no special event\U0001F613')
 
-
+  #if message.content.startswith('+greet'):
+   #   channel = message.channel
+    #  await channel.send('Say hello!')
+#
+ #     def check(m):
+  #      return m.content == 'hello' and m.channel == channel
+#
+ #     msg = await client.wait_for('message', check=check)
+  #    await channel.send('Hello {.author}!'.format(msg))
 
 client.run(os.getenv('TOKEN'))

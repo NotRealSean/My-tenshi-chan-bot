@@ -9,7 +9,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
   print('{0.user} is ready to see you <3'.format(client))
-  print('current version : 1.10.61')  
+  print('current version : 1.10.62')  
   
 
 @client.event
@@ -179,7 +179,7 @@ async def on_message(message):
     if loli == 5:
       await message.channel.send('404 Tenshi chan found an error please stay turned.')
     if loli == 6:
-      await message.channel.send('So... nii-san is lolicon i see')
+      await message.channel.send('So... onii-san is lolicon i see')
     if loli == 7:
       await message.channel.send('Nii-san... pervert!')
     if loli == 8:
@@ -187,7 +187,7 @@ async def on_message(message):
     if loli == 9:
       await message.channel.send('NII-SAN!?!')
     if loli == 10:
-      await message.channel.send('Nii-san... can you wait me grown up a little bit please\U0001F499')
+      await message.channel.send('Onii-san... can you wait me grown up a little bit please\U0001F499')
   
   if message.content == '+event':
     Today = datetime.datetime.now()
